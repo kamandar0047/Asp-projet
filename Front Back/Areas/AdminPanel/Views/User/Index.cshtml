@@ -1,0 +1,30 @@
+﻿@model List<UserVM>
+@{ 
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="card-body">
+    <h5 class="card-title">Table dark</h5>
+    <table class="mb-0 table table-dark">
+        <thead>
+            <tr>
+
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+
+            }
+            @foreach ( UserVM user in Model)
+            {
+                <tr>   <td> @user.Username   </td> <td>@user.Email </td> <td>@user.Role </td> </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
